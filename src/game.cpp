@@ -30,10 +30,10 @@ int main() {
     cout << "Combien de manches voulez vous faire : ", cin >> rounds;
     if(rounds == 0) return 0;
 
-    Grid grid;
     Player* players[2];
     players[0] = test(mode,'X');
     players[1] = test(mode,'O');
+    Grid grid;
 
     for(int i = 0; i < rounds; i++) {
         cout << "Début de la manche " << i+1 << "/" << rounds << endl;
