@@ -12,7 +12,7 @@ class Human : public Player {
         int getPos();
         string getName() { return name; };
         Human(char c) : Player(c) { 
-            cout << "Name to use in game : ", cin >> name;
+            cout << "Votre nom : ", cin >> name;
             cout << "Tu seras le : " << c << endl;
         };
         Human();
